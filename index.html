@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of a Senior Frontend Engineer, UI/UX Designer, and Web Developer with 15+ years of experience crafting premium digital experiences.">
+    <meta name="keywords" content="frontend developer, UI/UX designer, web developer, portfolio, senior engineer, HTML, CSS, JavaScript">
+    <meta name="author" content="Senior Frontend Engineer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Senior Frontend Engineer | Portfolio">
+    <meta property="og:description" content="Professional Portfolio of a Senior Frontend Engineer, UI/UX Designer, and Web Developer with 15+ years of experience.">
+    <meta property="og:image" content="https://yourportfolio.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourportfolio.com/">
+    <meta property="twitter:title" content="Senior Frontend Engineer | Portfolio">
+    <meta property="twitter:description" content="Professional Portfolio of a Senior Frontend Engineer, UI/UX Designer, and Web Developer with 15+ years of experience.">
+    <meta property="twitter:image" content="https://yourportfolio.com/og-image.jpg">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+
+    <title>Senior Frontend Engineer | Premium Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preload critical fonts (system font stack used, no external requests) -->
+</head>
+<body>
+
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-dot"></div>
+        </div>
+        <p class="loading-text">Loading<span class="loading-dots"></span></p>
+    </div>
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="header" id="header" role="banner">
+        <div class="header-container">
+            <a href="#home" class="logo" aria-label="Go to homepage">
+                <span class="logo-bracket"></span>
+                <span class="logo-text">NexaCode</span>
+                <span class="logo-bracket"></span>
+            </a>
+
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li class="nav-item"><a href="#showcase" class="nav-link" data-section="showcase">Showcase</a></li>
+                    <li class="nav-item"><a href="#creator" class="nav-link" data-section="creator">Creator</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                    <span class="theme-label" id="themeLabel">Dark</span>
+                </button>
+
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MOBILE MENU OVERLAY ==================== -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="mainContent" role="main">
+
+        <!-- ==================== 1. HOME / HERO SECTION ==================== -->
+        <section class="hero" id="home" aria-labelledby="heroHeading">
+            <div class="hero-bg-particles" aria-hidden="true">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+                <div class="particle particle-6"></div>
+                <div class="particle particle-7"></div>
+                <div class="particle particle-8"></div>
+            </div>
+            <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title" id="heroHeading">
+                        <span class="hero-name">Muhammad Hassan</span>
+                    </h1>
+                    <div class="hero-typing-wrapper">
+                        <span class="hero-typing-prefix">I am a </span>
+                        <span class="hero-typing-text" id="typingText"></span>
+                        <span class="hero-typing-cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Senior Frontend Engineer &amp; UI/UX Designer with 1.5+ years of experience
+                        crafting premium, high-performance digital experiences. I transform complex
+                        ideas into elegant, accessible, and responsive web solutions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/hassanusa2012-dev" class="social-link" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">LinkedIn - profile not found</a>
+                        <a href="https://www.instagram.com/hassanusa2012/?hl=en" class="social-link" aria-label="Instagram profile" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://wa.me/923178365988" class="social-link" aria-label="WhatsApp contact" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Profile Image Placeholder -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder" aria-label="Profile image placeholder">
+                        <div class="placeholder-inner">
+                            <img src="images/croped image 2.jpg" alt="" width="360px" style="border-radius: 20px;">
+                        </div>
+                    </div>
+                    <div class="hero-image-border" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 2. ABOUT SECTION ==================== -->
+        <section class="about section" id="about" aria-labelledby="aboutHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title" id="aboutHeading">Professional Background</h2>
+                    <p class="section-subtitle">A brief overview of my journey, skills, and experience</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Text -->
+                    <div class="about-content">
+                        <h3 class="about-intro-title">Professional Introduction</h3>
+                        <p class="about-text">
+                           I am a passionate Frontend Web Developer dedicated to creating modern, responsive, and user-friendly websites that combine clean design with exceptional performance. My journey into web development started with a curiosity about how digital experiences are built, and it quickly grew into a passion for designing intuitive interfaces and writing clean, maintainable code. I enjoy transforming creative ideas into functional websites that not only look visually appealing but also provide seamless experiences across desktops, tablets, and mobile devices.
+                        </p>
+                        <p class="about-text">
+                            I believe that successful web development is a perfect balance of creativity, technical expertise, and continuous learning. Every project I build reflects my commitment to quality, performance, and attention to detail. I am constantly expanding my knowledge by exploring modern technologies, improving my problem-solving skills, and building real-world projects that challenge me to grow as a developer. My goal is to create meaningful digital solutions that leave a lasting impression while delivering value to both clients and users.
+                        </p>
+                        <div class="about-details">
+                            <div class="about-detail-item">
+                                <span class="detail-label">Name:</span>
+                                <span class="detail-value">Muhammad Hassan</span>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Middle Sindh, Pakistan </span>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">hassanusa2012@gmail.com</span>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-label">Availability:</span>
+                                <span class="detail-value">6pm - 12pm</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Resume comming soon</a>
+                    </div>
+
+                    <!-- About Image Placeholder -->
+                    <div class="about-image-wrapper">
+                        <img src="images/381b4c6a-9e3e-4c1d-844a-dae9030f27e7.jpg" alt="" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline-section">
+                    <h3 class="timeline-heading">Experience &amp; Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2026 — Present</span>
+                                <h4 class="timeline-title">Frontend developer</h4>
+                                <p class="timeline-org">No company yet</p>
+                                <p class="timeline-desc">Currently expanding my web development skills by creating practical projects and exploring modern technologies to deliver clean, responsive, and user-friendly websites</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2024 — 2025</span>
+                                <h4 class="timeline-title">Frontend Developer</h4>
+                                <p class="timeline-org">No company</p>
+                                <p class="timeline-desc">Explored modern web technologies, practiced coding daily, and developed beginner-friendly projects to build a strong foundation in web development.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2024</span>
+                                <h4 class="timeline-title">step in web-development</h4>
+                                <p class="timeline-org">No company</p>
+                                <p class="timeline-desc">Started my journey in web development by learning HTML, CSS, and JavaScript while building small projects to strengthen my programming and problem-solving skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Summary -->
+                <div class="skills-summary">
+                    <h3 class="skills-heading">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">HTML5 / Semantic</span><span class="skill-percent">95%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">CSS3 / Animations</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">JavaScript (Vanilla)</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">UI/UX Design</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Responsive Design</span><span class="skill-percent">96%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 96%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Performance Optimization</span><span class="skill-percent">87%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="--skill-width: 87%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. SERVICES SECTION ==================== -->
+        <section class="services section" id="services" aria-labelledby="servicesHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section-title" id="servicesHeading">What I Offer</h2>
+                    <p class="section-subtitle">Comprehensive frontend and design solutions tailored to your needs</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[Web Development]</h3>
+                        <p class="service-card-desc">[Build fast, responsive, and accessible websites using modern HTML, CSS, and JavaScript. Every site is hand-crafted for performance and scalability. Edit this text to describe your service.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[UI/UX Design]</h3>
+                        <p class="service-card-desc">[Design intuitive user interfaces and seamless user experiences. From wireframes to polished prototypes, I create designs that delight users. Edit this text to describe your service.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[Performance Optimization]</h3>
+                        <p class="service-card-desc">[Optimize your existing websites for speed, accessibility, and SEO. Achieve perfect Lighthouse scores and faster load times. Edit this text to describe your service.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[Consulting & Mentoring]</h3>
+                        <p class="service-card-desc">[Provide expert guidance on frontend architecture, code reviews, and team mentoring. Help your team level up their skills. Edit this text to describe your service.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[Static Site Development]</h3>
+                        <p class="service-card-desc">[Create blazing-fast static websites that are secure, maintainable, and beautiful. Perfect for portfolios, landing pages, and business sites. Edit this text.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">&#9670;</div>
+                        <h3 class="service-card-title">[Custom Animations]</h3>
+                        <p class="service-card-desc">[Craft smooth, engaging CSS and JavaScript animations that bring your website to life without sacrificing performance. Edit this text to describe your service.]</p>
+                        <a href="#contact" class="service-card-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. PROJECTS SECTION ==================== -->
+        <section class="projects section" id="projects" aria-labelledby="projectsHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title" id="projectsHeading">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my recent work — each project built with precision and care</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="Project 1 image placeholder">
+                            <div class="placeholder-inner">
+                                <img src="images/live demo website.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">CodeCanvas</h3>
+                            <p class="project-desc">CodeCanvas is an interactive learning platform designed to help beginners master HTML and CSS through practical projects. It offers step-by-step guidance, hands-on challenges, and a clean, user-friendly interface, making web development simple, engaging, and effective for aspiring developers.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://hassanusa2012-dev.github.io/CodeCanva/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="https://github.com/hassanusa2012-dev/CodeCanva" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="Project 2 image placeholder">
+                            <div class="placeholder-inner">
+                                <span class="placeholder-icon">[ Preview ]</span>
+                                <span class="placeholder-sub">Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">project not found</h3>
+                            <p class="project-desc">This project is not available at the moment. It is currently being planned and developed with a focus on performance, modern design, and user experience. Once completed, it will be published here with a live demo and source code. Stay tuned!</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="Project 3 image placeholder">
+                            <div class="placeholder-inner">
+                                <span class="placeholder-icon">[ Preview ]</span>
+                                <span class="placeholder-sub">Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">project not found</h3>
+                            <p class="project-desc">This project is not available at the moment. It is currently being planned and developed with a focus on performance, modern design, and user experience. Once completed, it will be published here with a live demo and source code. Stay tuned!</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 4 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="Project 4 image placeholder">
+                            <div class="placeholder-inner">
+                                <span class="placeholder-icon">[ Preview ]</span>
+                                <span class="placeholder-sub">Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">project not found</h3>
+                            <p class="project-desc">This project is not available at the moment. It is currently being planned and developed with a focus on performance, modern design, and user experience. Once completed, it will be published here with a live demo and source code. Stay tuned!</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. SHOWCASE / SLIDER SECTION ==================== -->
+        <section class="showcase section" id="showcase" aria-labelledby="showcaseHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Showcase</span>
+                    <h2 class="section-title" id="showcaseHeading">Image Gallery</h2>
+                    <p class="section-subtitle">A curated slider of visual highlights</p>
+                </div>
+                <div class="slider-wrapper" id="sliderWrapper" aria-label="Image showcase slider" role="region">
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- Slide 1 -->
+                        <div class="slider-slide">
+                            <div class="slider-image-placeholder" aria-label="Slider image 1 placeholder">
+                                <div class="placeholder-inner">
+                                    <span class="placeholder-icon" style="font-size: 1em;">image is not available and will be available soon</span>
+                                    <span class="placeholder-sub">not available</span>
+                                </div>
+                            </div>
+                            <p class="slider-caption">caption is not found</p>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slider-slide">
+                            <div class="slider-image-placeholder" aria-label="Slider image 2 placeholder">
+                                <div class="placeholder-inner">
+                                    <span class="placeholder-icon" style="font-size: 1em;">image is not available and will be available soon</span>
+                                    <span class="placeholder-sub">not available</span>
+                                </div>
+                            </div>
+                            <p class="slider-caption">caption is not found</p>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slider-slide">
+                            <div class="slider-image-placeholder" aria-label="Slider image 3 placeholder">
+                                <div class="placeholder-inner">
+                                    <span class="placeholder-icon" style="font-size: 1em;">image is not available and will be available soon</span>
+                                    <span class="placeholder-sub">not available</span>
+                                </div>
+                            </div>
+                            <p class="slider-caption">caption is not found</p>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="slider-slide">
+                            <div class="slider-image-placeholder" aria-label="Slider image 4 placeholder">
+                                <div class="placeholder-inner">
+                                    <span class="placeholder-icon" style="font-size: 1em;">image is not available and will be available soon</span>
+                                    <span class="placeholder-sub">not available</span>
+                                </div>
+                            </div>
+                            <p class="slider-caption">caption is not found</p>
+                        </div>
+                    </div>
+                    <!-- Slider Controls -->
+                    <button class="slider-btn slider-btn-prev" id="sliderPrev" aria-label="Previous slide">&larr;</button>
+                    <button class="slider-btn slider-btn-next" id="sliderNext" aria-label="Next slide">&rarr;</button>
+                    <!-- Slider Dots -->
+                    <div class="slider-dots" id="sliderDots" aria-label="Slider navigation dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 6. CREATOR SECTION ==================== -->
+        <section class="creator section" id="creator" aria-labelledby="creatorHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">The Creator</span>
+                    <h2 class="section-title" id="creatorHeading">About The Developer</h2>
+                    <p class="section-subtitle">The person behind the code — philosophy, passion, and purpose</p>
+                </div>
+                <div class="creator-grid">
+                    <!-- Creator Image Placeholder -->
+                    <div class="creator-image-wrapper">
+                        <div class="creator-image-placeholder" aria-label="Creator photograph placeholder">
+                            <img src="images/381b4c6a-9e3e-4c1d-844a-dae9030f27e7.jpg" alt="" style="border-radius: 10px;">
+                        </div>
+                    </div>
+                    <!-- Creator Content -->
+                    <div class="creator-content">
+                        <h3 class="creator-name">Muhammad-Hassan</h3>
+                        <p class="creator-role">Static Website Developer &amp; Frontend Specialist</p>
+                        <div class="creator-description">
+                            <p>
+                                [I am a passionate Static Website Developer dedicated to the craft of building
+                                elegant, high-performance websites using pure HTML, CSS, and JavaScript. With over
+                                15 years of hands-on experience, I have honed my skills in creating digital
+                                experiences that are not only visually stunning but also technically robust,
+                                accessible, and lightning-fast. Every line of code I write is intentional,
+                                every design decision is purposeful, and every project I deliver is a testament
+                                to my commitment to quality.]
+                            </p>
+                            <h4 class="creator-subheading">My Mission</h4>
+                            <p>
+                                [My mission is to democratize the web by creating lightweight, framework-free
+                                websites that load instantly and work everywhere. I believe that the best
+                                websites are those that respect the user's time and attention — no bloated
+                                dependencies, no unnecessary complexity, just clean, efficient code that
+                                delivers a premium experience on any device.]
+                            </p>
+                            <h4 class="creator-subheading">My Vision</h4>
+                            <p>
+                                [I envision a web where performance and beauty coexist harmoniously. A web
+                                where every site is accessible to all users regardless of their device,
+                                connection speed, or abilities. I strive to set an example by building
+                                websites that achieve perfect performance scores while maintaining the
+                                highest standards of design and interactivity.]
+                            </p>
+                            <h4 class="creator-subheading">Working Style</h4>
+                            <p>
+                                [I work methodically and with meticulous attention to detail. Every project
+                                begins with a deep understanding of the client's goals, followed by careful
+                                planning, wireframing, and iterative development. I communicate transparently,
+                                deliver on time, and never compromise on quality. My workflow is optimized
+                                for efficiency — from the first line of HTML to the final deployment.]
+                            </p>
+                            <h4 class="creator-subheading">My Passion &amp; Goals</h4>
+                            <p>
+                                [I am genuinely passionate about the art and science of frontend development.
+                                The constant evolution of web technologies excites me, and I dedicate time
+                                every day to learning, experimenting, and refining my craft. My goal is to
+                                continue building remarkable digital products that make a real difference
+                                for businesses and their users — one meticulously crafted website at a time.]
+                            </p>
+                        </div>
+                        <div class="creator-cta">
+                            <a href="#contact" class="btn btn-primary">Work With Me</a>
+                            <a href="#projects" class="btn btn-outline">See My Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 7. CONTACT SECTION ==================== -->
+        <section class="contact section" id="contact" aria-labelledby="contactHeading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title" id="contactHeading">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project in mind? Let's discuss how I can help bring it to life.</p>
+                </div>
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Contact Details</h3>
+                        <p class="contact-info-desc">Feel free to reach out through any of the channels below. I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+                        <ul class="contact-details-list">
+                            <li class="contact-detail">
+                                <span class="contact-detail-label">Email:</span>
+                                <span class="contact-detail-value">hassanusa2012@gmail.com</span>
+                            </li>
+                            <li class="contact-detail">
+                                <span class="contact-detail-label">Phone:</span>
+                                <span class="contact-detail-value">0317-8365988</span>
+                            </li>
+                            <li class="contact-detail">
+                                <span class="contact-detail-label">Location:</span>
+                                <span class="contact-detail-value">Middle Sindh, Pakistan </span>
+                            </li>
+                            <li class="contact-detail">
+                                <span class="contact-detail-label">WhatsApp:</span>
+                                <span class="contact-detail-value">0317-8365988</span>
+                            </li>
+                        </ul>
+                        <div class="contact-social-links">
+                            <span class="contact-social-label">Find me on:</span>
+                            <div class="contact-social-row">
+                                <a href="https://github.com/hassanusa2012-dev" class="contact-social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#" class="contact-social-link" target="_blank" rel="noopener noreferrer">LinkedIn - profile not found</a>
+                                <a href="https://www.instagram.com/hassanusa2012/?hl=en" class="contact-social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            </div>
+                            <a href="https://wa.me/923178365988" style="border: solid 1px green; padding: 10px 20px; font-size: 1.5em; border-radius: 10px; background-color: green;">Click here to chat with me  <i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h3 class="contact-form-title">Send a Message</h3>
+                        <div class="form-group">
+                            <label for="formName" class="form-label">Full Name</label>
+                            <input type="text" id="formName" class="form-input" placeholder="[Enter your full name]" required>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail" class="form-label">Email Address</label>
+                            <input type="email" id="formEmail" class="form-input" placeholder="[Enter your email address]" required>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject" class="form-label">Subject</label>
+                            <input type="text" id="formSubject" class="form-input" placeholder="[What is this about?]" required>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage" class="form-label">Message</label>
+                            <textarea id="formMessage" class="form-input form-textarea" rows="5" placeholder="[Write your message here...]" required></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message (Demo)</button>
+                        <p class="form-note">This form is for demonstration purposes only. No data is sent or stored.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">{</span>
+                        <span class="logo-text">NexaCode</span>
+                        <span class="logo-bracket">}</span>
+                    </a>
+                    <p class="footer-desc">Senior Frontend Engineer &amp; UI/UX Designer crafting premium web experiences with clean, efficient code.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="https://github.com/hassanusa2012-dev" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="#" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/hassanusa2012/?hl=en" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://wa.me/923178365988" class="footer-link" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; <span id="currentYear">2026</span> [Your Name]. All rights reserved. | Built with pure HTML, CSS &amp; JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Back to top">
+        <span class="back-to-top-arrow">&uarr;</span>
+    </button>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
