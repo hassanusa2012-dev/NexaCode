@@ -511,6 +511,11 @@ button {
     margin-bottom: 2.5rem;
 }
 
+.btn btn-primary:hover {
+   background-color: blue;
+   color: white;
+}
+
 .hero-social {
     display: flex;
     gap: 1.5rem;
