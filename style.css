@@ -145,6 +145,7 @@ button {
 
 #paragraph {
    border: solid 1px blue;
+   widh: 300px;
 }
 
 .loading-screen.hidden {
