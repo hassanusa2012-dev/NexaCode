@@ -468,7 +468,6 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-   color: red:
 }
 
 .hero-typing-wrapper {
@@ -509,11 +508,6 @@ button {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 2.5rem;
-}
-
-.btn btn-primary:hover {
-   background-color: blue;
-   color: white;
 }
 
 .hero-social {
@@ -872,7 +866,7 @@ button {
 }
 
 .stat-card {
-    background: var(--background-color--;
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-md);
     padding: 2rem 1.5rem;
