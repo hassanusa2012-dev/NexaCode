@@ -143,6 +143,10 @@ button {
     opacity: 1;
 }
 
+#paragraph {
+   border: solid 1px blue;
+}
+
 .loading-screen.hidden {
     opacity: 0;
     visibility: hidden;
